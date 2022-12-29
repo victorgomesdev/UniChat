@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react'
 
 function App() {
+  const [test, setTest ] = useState(0)
   const teste ='Victor Gomes'
-  document.title = 'UniChat | Home'
+  document.title = 'Karrinho.com | Home'
   return (
     <div className="App">
       <header className="App-header">
@@ -19,8 +21,6 @@ function App() {
         >
           Learn React
         </a>
-        <p>Olá, {teste} estou testando!</p>
-        <p>Funciona no celular também!</p>
       </header>
     </div>
   );
